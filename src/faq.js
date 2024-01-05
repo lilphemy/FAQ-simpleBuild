@@ -51,13 +51,13 @@ const renderQuestions = () => {
             temptClone.getElementById("quest-field").textContent = question;
             temptClone.getElementById("ans-field").textContent = answer;
         }
-
         appendChild(temptClone.querySelector(".questCase"), questDisp)
         
     })
 
     questDisp.querySelectorAll("#operation-icon").forEach((unit, main_index) => {
         unit.addEventListener("click", (e) => {
+            
             if(e.currentTarget) {
                 questDisp.getElementsByClassName("quest-ans")[main_index].classList.toggle("display-value")
             }
